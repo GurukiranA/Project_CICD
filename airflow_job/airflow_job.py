@@ -73,14 +73,6 @@ with DAG(
                 "subnetwork_uri": "projects/sturdy-plateau-450011-q7/regions/us-central1/subnetworks/default",
             }
         },
-    "worker_config": {
-        "num_instances": 2,  # Set the number of worker nodes based on your workload
-        "instance_type": "n1-standard-1",  # Adjust CPU and memory as per requirement
-    },
-    "driver_config": {
-        "num_instances": 1,
-        "instance_type": "n1-standard-1",  # Adjust CPU and memory for the driver
-    }
     }
 
     pyspark_task = DataprocCreateBatchOperator(
